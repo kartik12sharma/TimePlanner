@@ -1,0 +1,41 @@
+:root {
+  --bg: #f8f4ec;
+  --surface: white;
+  --border: #e0d4bc;
+  --text: #2c1f14;
+  --accent: #8b6340;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.unauthorized {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  gap: 1rem;
+  color: var(--accent);
+}
+
+.unauthorized h2 {
+  font-size: 2rem;
+  color: crimson;
+}

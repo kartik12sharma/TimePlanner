@@ -1,0 +1,183 @@
+.admin-container {
+  padding: 2rem 1.5rem;
+  min-height: calc(100vh - 60px);
+  background: var(--bg);
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1.5px solid var(--border);
+  padding-bottom: 0.8rem;
+}
+
+.admin-tab {
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.admin-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.admin-error {
+  color: crimson;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.admin-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: var(--accent);
+  font-size: 0.88rem;
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.admin-table th {
+  padding: 0.8rem 1rem;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.admin-table td {
+  padding: 0.8rem 1rem;
+  color: var(--text);
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+.admin-table tr:hover td {
+  background: var(--bg);
+}
+
+.admin-role {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+.admin-role.admin {
+  background: rgba(220, 20, 60, 0.12);
+  color: crimson;
+}
+.admin-role.user {
+  background: rgba(139, 99, 64, 0.12);
+  color: var(--accent);
+}
+
+.admin-priority {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+.admin-priority.high {
+  background: rgba(220, 20, 60, 0.12);
+  color: crimson;
+}
+.admin-priority.medium {
+  background: rgba(184, 115, 51, 0.12);
+  color: #b87333;
+}
+.admin-priority.low {
+  background: rgba(139, 99, 64, 0.12);
+  color: var(--accent);
+}
+
+.admin-btn {
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.4rem;
+  transition: opacity 0.2s;
+}
+
+.admin-btn:hover {
+  opacity: 0.85;
+}
+.admin-btn.edit {
+  background: steelblue;
+  color: white;
+}
+.admin-btn.delete {
+  background: crimson;
+  color: white;
+}
+.admin-btn.save {
+  background: var(--accent);
+  color: white;
+}
+.admin-btn.cancel {
+  background: var(--border);
+  color: var(--accent);
+}
+
+.admin-edit-input {
+  padding: 0.3rem 0.5rem;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: 0.82rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.admin-edit-input:focus {
+  border-color: var(--accent);
+}

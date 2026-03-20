@@ -1,0 +1,9 @@
+{
+  "short_name": "GoalForge",
+  "name": "GoalForge — Smart Time Table Planner",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "whitesmoke",
+  "background_color": "whitesmoke"
+}
