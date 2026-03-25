@@ -1,4 +1,6 @@
 #Your read me should have written directions on how to use the app like steps 
+You need to better explain the app it should have a welcome page explaining what and how to use 
+Unique code and design tho
 
 # TimePlanner — Smart Time Table Planner
 
