@@ -1,3 +1,5 @@
+#Your read me should have written directions on how to use the app like steps 
+
 # TimePlanner — Smart Time Table Planner
 
 **Authors:** Kartik Sharma, Hanish Mehla
