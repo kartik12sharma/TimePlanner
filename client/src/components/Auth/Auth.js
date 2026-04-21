@@ -8,10 +8,12 @@ export default function Auth({ onLogin }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [successMsg, setSuccessMsg] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    setSuccessMsg("");
     setLoading(true);
 
     const endpoint = isSignUp ? "/api/users/signup" : "/api/users/login";
@@ -30,7 +32,16 @@ export default function Auth({ onLogin }) {
         return;
       }
 
-      onLogin(data.user);
+      if (isSignUp) {
+        setSuccessMsg("Account created! You can now sign in.");
+        setIsSignUp(false);
+        setUsername("");
+        setPassword("");
+        return;
+      }
+
+      setSuccessMsg("Signed in successfully!");
+      setTimeout(() => onLogin(data.user), 800);
     } catch(_err) {
       setError("Failed to connect to server");
     } finally {
@@ -52,6 +63,7 @@ export default function Auth({ onLogin }) {
             onClick={() => {
               setIsSignUp(false);
               setError("");
+              setSuccessMsg(""); 
             }}
           >
             Sign In
@@ -61,6 +73,7 @@ export default function Auth({ onLogin }) {
             onClick={() => {
               setIsSignUp(true);
               setError("");
+              setSuccessMsg("");
             }}
           >
             Sign Up
@@ -89,6 +102,7 @@ export default function Auth({ onLogin }) {
           />
 
           {error && <p className="auth-error">{error}</p>}
+          {successMsg && <p className="auth-success">{successMsg}</p>}
 
           <button className="auth-btn" type="submit" disabled={loading}>
             {loading ? "Please wait..." : isSignUp ? "Sign Up" : "Sign In"}

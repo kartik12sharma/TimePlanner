@@ -121,3 +121,9 @@
   color: var(--accent);
   cursor: not-allowed;
 }
+
+.auth-success {
+  color: green;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
