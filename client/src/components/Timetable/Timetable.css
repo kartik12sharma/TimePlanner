@@ -239,7 +239,7 @@
 .tt-category-picker {
   position: absolute;
   top: 110%;
-  right: 0;
+  left: 0;
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: 8px;
