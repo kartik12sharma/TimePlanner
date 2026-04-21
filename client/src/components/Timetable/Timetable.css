@@ -231,6 +231,9 @@
 
 .tt-add-wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .tt-category-picker {
