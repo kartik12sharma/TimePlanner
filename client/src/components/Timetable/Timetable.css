@@ -157,9 +157,9 @@
 }
 
 .tt-block.health {
-  background: rgba(139, 99, 64, 0.15);
-  color: var(--accent);
-  border-left: 3px solid var(--accent);
+  background: rgba(34, 139, 34, 0.15);
+  color: green;
+  border-left: 3px solid green;
 }
 
 .tt-block.academic {
@@ -180,7 +180,7 @@
 }
 
 .tt-legend-item.health {
-  color: var(--accent);
+  color: green;
 }
 .tt-legend-item.academic {
   color: steelblue;
@@ -231,12 +231,15 @@
 
 .tt-add-wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .tt-category-picker {
   position: absolute;
   top: 110%;
-  right: 0;
+  left: 0;
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: 8px;
@@ -263,7 +266,7 @@
   opacity: 0.85;
 }
 .tt-category-btn.health {
-  background: var(--accent);
+  background: green;
   color: white;
 }
 .tt-category-btn.academic {
